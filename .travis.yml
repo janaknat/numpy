@@ -46,8 +46,10 @@ jobs:
 
     - python: 3.8
       os: linux
-      arch: arm64
+      arch: arm64-graviton2
       virt: vm
+      dist: focal
+      group: edge
       env:
        # use OpenBLAS build, not system ATLAS
        - DOWNLOAD_OPENBLAS=1
